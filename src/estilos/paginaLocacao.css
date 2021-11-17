@@ -1,0 +1,33 @@
+.info-locacao {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8vh auto 10vh auto;
+    border: 1px solid #ff385c;
+    border-radius: 20px;
+}
+
+.info-locacao-titulo {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.info-locacao img {
+    border: 1px solid #ff385c;
+}
+
+.botão-reserva {
+    background-color: #ff385c;
+    margin-bottom: 4vh;
+    border-color: #ff385c;
+}
+
+.botão-reserva:hover {
+    background-color: black;
+    color: white;
+}
+
+
+

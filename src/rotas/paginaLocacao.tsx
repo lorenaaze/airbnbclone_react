@@ -7,6 +7,8 @@ import { Locacao } from '../dtos';
 import * as Dados from '../utils/retornaDados';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css"
+import backgroundTheme from '../assets/sem_image.png';
+import '../estilos/paginaLocacao.css';
 
  function RetornoLocacao() {
     let params = useParams();
@@ -100,6 +102,20 @@ import "react-datepicker/dist/react-datepicker.css"
 {/*////////////////////////////////////// o MODAL DE DELETAR ACABA AQUI //////////////////////////////////////////////////////*/}
 
         <Button onClick={handleShow}>Fazer reserva</Button>
+        <div className="info-locacao">
+            <h1 className="info-locacao-titulo">Faça já sua reserva!</h1>
+            <p>Nome da locação: {findLocacao?.locacao_nome}</p>
+            <img style={{height: "300px", width: "400px", margin: "10px 0 25px 0"}} src={findLocacao?.urlImage || backgroundTheme}></img>
+            <p>{findLocacao?.descricao_longa}</p>
+            <p>{findLocacao?.descricao_curta}</p>
+            <p>A locação fica no endereço {findLocacao?.logradouro}, {findLocacao?.bairro}, em {findLocacao?.localidade} - {findLocacao?.uf}</p>
+            <p>O valor da diária é de R${findLocacao?.preco} reais</p>
+            <p>Nessa locação, a capacidade é de até {findLocacao?.capacidade} pessoas</p>
+            <p>Para contatar o(a) proprietário(a) {findLocacao?.proprietario.nome}:</p>
+            <p>Telefone: {findLocacao?.proprietario.phone}</p>
+            <p>E-mail: {findLocacao?.proprietario.email}</p>
+            <Button className="botão-reserva" onClick={handleShow}>Fazer reserva</Button>
+        </div>
         
         
         <Modal

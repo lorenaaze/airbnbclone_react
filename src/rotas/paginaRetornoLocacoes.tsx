@@ -93,7 +93,7 @@ const filteredLocacoes = dados?.filter(
     <>
       <Container>
       {console.log(typeof(dados))}
-      <Form>
+      <Form style={{marginTop: "3rem"}}>
                 <Row>
                     <Col className="">
                         <InputGroup className="mb-3">
@@ -116,7 +116,7 @@ const filteredLocacoes = dados?.filter(
             <Scroll>
             {filteredLocacoes && filteredLocacoes!.map((filteredLocacao) => 
             <ul>
-            <Link to={`${filteredLocacao._id}`}> 
+            <Link style={{color: "#000"}} to={`${filteredLocacao._id}`}> 
             <Card>
              <LocacaoCard key={filteredLocacao._id} 
                           locacao_nome={filteredLocacao.locacao_nome} 

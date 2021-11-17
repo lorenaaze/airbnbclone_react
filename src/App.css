@@ -37,7 +37,17 @@
   }
 }
 
-/* .img-carrossel {
-  height: 50%;
+.nav .nav-titulo {
+  font-size: 1.8em;
+  font-weight: bold;
+  padding-left: 2vw;
+  padding-right: 8vw;
+  text-align: center;
+}
 
-} */
+.nav {
+  width: 100vw;
+  background-color: rgb(245, 245, 225);
+  border-bottom: 2px solid #ff385c;
+}
+

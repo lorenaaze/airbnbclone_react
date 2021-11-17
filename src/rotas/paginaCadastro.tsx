@@ -1,10 +1,11 @@
-import { Form, Row, Col, Button, InputGroup } from 'react-bootstrap';
+import { Form, Row, Col, Button } from 'react-bootstrap';
 import { useAlert } from 'react-alert';
+import '../estilos/paginaCadastro.css';
 
 function Cadastro() {
     return (
         <>
-            <form method="post" action="https://airbnb-clone-desafio.herokuapp.com/api/locacao/criarlocacao" style={{ display: 'block', margin: '5rem 10rem' }}
+            <form className="form-cadastro" method="post" action="https://airbnb-clone-desafio.herokuapp.com/api/locacao/criarlocacao" style={{ display: 'block', margin: '5rem 10rem' }}
             onSubmit={() => {
                 alert('Cadastro enviado com sucesso!')
             }}>
@@ -68,13 +69,8 @@ function Cadastro() {
                             <Form.Control type="number" placeholder="Digite a capacidade de pessoas" name="capacidade" min={1} required/>
                         </Form.Group>
                         <Form.Group as={Col} controlId="formGridPassword">
-                            <Form.Label htmlFor="urlImage" >Imagem</Form.Label>
-                            <InputGroup>
-                            <InputGroup.Text id="basic-addon3">
-                                 https://example.com/imagem/
-                            </InputGroup.Text>
-                            <Form.Control type="string" id="urlImage" aria-describedby="basic-addon3" name="urlImage" min={1} required/>
-                            </InputGroup>
+                            <Form.Label>Imagem</Form.Label>
+                            <Form.Control type="string" id="urlImage" name="urlImage" min={1} required/>
                         </Form.Group>
                     </Row>
 
@@ -106,7 +102,7 @@ function Cadastro() {
                         </Form.Group>
                     </Row>
                 </fieldset>
-                <Button variant="primary" type="submit">Enviar cadastro</Button>
+                <Button style={{backgroundColor: "#ff385c", borderColor: "#ff385c"}} className="botao-cadastro" variant="primary" type="submit">Enviar cadastro</Button>
             </form>
         </>
     )

@@ -1,3 +1,38 @@
+## :fire: O projeto
+
+[Airbnb Clone](https://airbnbclone-react.vercel.app/)
+
+### :rocket: Tecnologias Usadas
+
+O projeto foi feito com as seguintes tecnologias:
+
+- [ReactJS](https://pt-br.reactjs.org/)
+- [React Bootstrap](https://react-bootstrap.github.io/)
+
+
+## :zap: Executando o Projeto
+
+#### Clonando o projeto
+
+```sh
+$ git clone https://github.com/lorenaaze/airbnbclone_react.git
+```
+
+#### Instalando os módulos
+
+```sh
+$ npm install
+```
+
+## Tarefas da dupla
+
+### Lorena
+
+### Liz
+ - Card com retorno de Locações
+ - Busca com filtro
+ - Pequenas atualizações nos forms
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
